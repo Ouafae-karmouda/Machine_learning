@@ -24,7 +24,7 @@ def make_data(N, err= 1.0, seed=1):
         seed (int, optional): _description_. Defaults to 1.
     """
     rng = np.random.RandomState(seed)
-    X = rng.rand(N,1)**2
+    X = rng.rand(N,1)
     y = 10 - 1./(X.ravel() +0.1) 
 
     if err >0:
